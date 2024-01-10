@@ -53,11 +53,28 @@ public class ArrayOps {
                     includes = true;
                     break;
                 }
+                
             }
             if(!includes){
                 return false;
             }
         }
+        
+        for(int i=0;i<array1.length;i++){
+            boolean includes = false;
+            for(int j=0;j<array2.length;j++){
+                if(array1[i]==array2[j]){
+                    includes = true;
+                    break;
+                }
+                
+            }
+            if(!includes){
+                return false;
+            }
+        }
+
+        
         return true;
     }
 

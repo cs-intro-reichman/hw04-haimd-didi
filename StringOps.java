@@ -50,7 +50,7 @@ public class StringOps {
         String vowels = "aeiou";
 
         for(int i=0;i<string.length();i++){
-            if(vowels.indexOf(string.charAt(i))!=-1){
+            if(vowels.indexOf(string.charAt(i))!=-1||vowels.indexOf(string.charAt(i)+32)!=1){
                 str+=toUpperCase(string.charAt(i));
             } else str+=toLowerCase(string.charAt(i));
         }
